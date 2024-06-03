@@ -1,2 +1,5 @@
-dotnet add package hello
-dotnet restore --locked-mode
+FROM hello-seattle
+
+RUN dotnet add package hello
+
+RUN dotnet restore --locked-mode
